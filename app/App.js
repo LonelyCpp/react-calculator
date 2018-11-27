@@ -7,76 +7,94 @@ import NumberButton from './NumberButton.js'
 
 type Props = {};
 export default class App extends Component<Props> {
-  _onPress = () => {
-      
+  constructor(props){
+    super(props);
+    this.state = {
+      expression: ''
+    }
   }
+
+  isOperator = (char) => {
+    switch(char){
+      case '*':
+      case '+':
+      case '/':
+      case '-': return true;
+    }
+    return false;
+  }
+
+  _onPress = (char) => {
+      console.log(char);
+      if(char == ''){
+        return;
+      } 
+      else if(char == 'C'){
+        this.setState(previousState => (
+          { expression: ''}
+        ));
+      }
+      else if(char == '<'){
+        this.setState(previousState => (
+          { expression: previousState.expression.slice(0, -1)}
+        ));
+      } 
+      else {
+        let len = this.state.expression.length;
+        if(this.isOperator(char)){
+          if(len > 0){
+            let lastChar = this.state.expression[len - 1];
+            if(this.isOperator(lastChar)){
+              this.setState(previousState => (
+                { expression: previousState.expression.slice(0, -1)}
+              ));
+            }
+          }
+          else {
+            return;
+          }
+        }
+        this.setState(previousState => (
+          { expression: previousState.expression + char}
+        ));
+      }
+  }
+  
   render() {
     return (
       <View style={mainLayoutStyle.container}>
         <View style={mainLayoutStyle.notepadRow}>
-          <Text style={textStyle.notepad}>1 + 1</Text>
+          <Text style={textStyle.notepad}>{this.state.expression}</Text>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
-          <NumberButton text='C'/>
-          <NumberButton text=''/>
-          <NumberButton text='%'/>
-          <NumberButton text='/'/>
+          <NumberButton text='C' onPress={this._onPress}/>
+          <NumberButton text='<'  onPress={this._onPress}/>
+          <NumberButton text='%' onPress={this._onPress}/>
+          <NumberButton text='/' onPress={this._onPress}/>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>7</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>8</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>9</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>x</Text>
-          </View>
+          <NumberButton text='7' onPress={this._onPress}/>
+          <NumberButton text='8' onPress={this._onPress}/>
+          <NumberButton text='9' onPress={this._onPress}/>
+          <NumberButton text='*' onPress={this._onPress}/>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>4</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>5</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>6</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>-</Text>
-          </View>
+          <NumberButton text='4' onPress={this._onPress}/>
+          <NumberButton text='5' onPress={this._onPress}/>
+          <NumberButton text='6' onPress={this._onPress}/>
+          <NumberButton text='-' onPress={this._onPress}/>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>1</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>2</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>3</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>+</Text>
-          </View>
+          <NumberButton text='1' onPress={this._onPress}/>
+          <NumberButton text='2' onPress={this._onPress}/>
+          <NumberButton text='3' onPress={this._onPress}/>
+          <NumberButton text='+' onPress={this._onPress}/>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>0</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}></Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>.</Text>
-          </View>
-          <View style={mainLayoutStyle.numberButton}>
-            <Text style={textStyle.numberPad}>=</Text>
-          </View>
+          <NumberButton text='0' onPress={this._onPress}/>
+          <NumberButton text=''  onPress={this._onPress}/>
+          <NumberButton text='.' onPress={this._onPress}/>
+          <NumberButton text='=' onPress={this._onPress}/>
         </View>
       </View>
     );

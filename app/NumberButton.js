@@ -12,7 +12,7 @@ export default class NumberButton extends Component{
     render(){
         return (
             <TouchableNativeFeedback
-                onPress={this.props.onPress}} 
+                onPress={() => {this.props.onPress(this.props.text)}} 
                 background={TouchableNativeFeedback.Ripple('orange', true)}>
                 <View style={mainLayoutStyle.numberButton}>
                     <Text style={textStyle.numberPad}>{this.props.text}</Text>
