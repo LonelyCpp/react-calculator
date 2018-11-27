@@ -26,20 +26,20 @@ export default class App extends Component<Props> {
 
   _onPress = (char) => {
       console.log(char);
-      if(char == ''){
+      if(char == ''){       // Blank button press
         return;
       } 
-      else if(char == 'C'){
+      else if(char == 'C'){ // Clear screen
         this.setState(previousState => (
           { expression: ''}
         ));
       }
-      else if(char == '<'){
+      else if(char == '<'){ // Backspace
         this.setState(previousState => (
           { expression: previousState.expression.slice(0, -1)}
         ));
       } 
-      else {
+      else {                // operators or numbers
         let len = this.state.expression.length;
         if(this.isOperator(char)){
           if(len > 0){
