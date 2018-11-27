@@ -5,6 +5,8 @@ import mainLayoutStyle from './styles/mainLayout.js'
 import textStyle from './styles/text.js'
 import NumberButton from './NumberButton.js'
 
+import Calculator from './Calculator.js'
+
 type Props = {};
 export default class App extends Component<Props> {
   constructor(props){
@@ -29,6 +31,9 @@ export default class App extends Component<Props> {
       if(char == ''){       // Blank button press
         return;
       } 
+      else if(char == '='){
+        Calculator.infixToPostfix(this.state.expression);
+      }
       else if(char == 'C'){ // Clear screen
         this.setState(previousState => (
           { expression: ''}
@@ -45,9 +50,7 @@ export default class App extends Component<Props> {
           if(len > 0){
             let lastChar = this.state.expression[len - 1];
             if(this.isOperator(lastChar)){
-              this.setState(previousState => (
-                { expression: previousState.expression.slice(0, -1)}
-              ));
+              this.setState(previousState => ({ expression: previousState.expression.slice(0, -1)}));
             }
           }
           else {
