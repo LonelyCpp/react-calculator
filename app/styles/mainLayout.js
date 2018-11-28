@@ -11,7 +11,7 @@ export default StyleSheet.create({
 
     notepadRow: {
         flex: 3, 
-        backgroundColor: 'orange', 
+        backgroundColor: '#f3a712', 
         alignSelf: 'stretch',
         borderBottomWidth: 3,
         borderColor: '#000000',
@@ -31,6 +31,7 @@ export default StyleSheet.create({
         borderBottomWidth: 0.5,
         borderColor: 'grey',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#29335c'
     },
   });
