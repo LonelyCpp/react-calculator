@@ -1,5 +1,20 @@
 export default class Calculator{
 
+    static getPriority = (char) => {
+        switch(char){
+            case '+':
+            case '-': return 0;
+            case '*':
+            case '/': return 1;
+        }
+    }
+
+    static getStackTop = (stack) => {
+        if(stack.length > 0){
+            return stack[stack.length - 1];
+        }
+    }
+
     static infixToPostfix = (infix) =>{
         infix = infix.replace(/\+/g, ' + ');
         infix = infix.replace(/\-/g, ' - ');
@@ -21,38 +36,75 @@ export default class Calculator{
                         opStack.push(element);
                     }
                     else {
-                        let stTopPriority = this.getPriority(this.getStackTop(opStack));
-                        let elePriority = this.getPriority(element);
+                        let stTopPriority = Calculator.getPriority(Calculator.getStackTop(opStack));
+                        let elePriority = Calculator.getPriority(element);
 
-                        if(elePriority > stTopPriority){
+                        if(elePriority >= stTopPriority){
                             opStack.push(element);
                         }
-                        // contivue here
+                        else {
+                            while(elePriority < stTopPriority && opStack.length != 0){
+                                postfix.push(opStack.pop())
+                                stTopPriority = Calculator.getPriority(Calculator.getStackTop(opStack))
+                            }
+                            opStack.push(element);
+                        }
                     }
-                    opStack.push(element); 
                     break;
                 }
                 default: postfix.push(parseFloat(element))
             }
         });
+
+        while(opStack.length != 0){
+            postfix.push(opStack.pop())
+        }
         
-        console.log(opStack);
-        console.log(postfix);
+        console.log(postfix)
+        return postfix;
     }
 
-    static getPriority(char) {
-        switch(char){
-            case '+':
-            case '-': return 0;
-            case '*':
-            case '/': return 1;
-        }
-    }
+    static evalPostfix(postfix) {
+        let evalStack = [];
 
-    static getStackTop(stack) {
-        if(stack.length > 0){
-            return stack[stack.length - 1];
-        }
-    }
+        postfix.forEach(element => {
+            try{
+                switch(element) {
+                    case '+':{
+                        let v1 = evalStack.pop();
+                        let v2 = evalStack.pop();
+                        evalStack.push(v2 + v1);
+                        break;
+                    }
+                    case '-':{
+                        let v1 = evalStack.pop();
+                        let v2 = evalStack.pop();
+                        evalStack.push(v2 - v1);
+                        break;
+                    }
+                    case '*':{
+                        let v1 = evalStack.pop();
+                        let v2 = evalStack.pop();
+                        evalStack.push(v2 * v1);
+                        break;
+                    }
+                    case '/':{
+                        let v1 = evalStack.pop();
+                        let v2 = evalStack.pop();
+                        evalStack.push(v2 / v1);
+                        break;
+                    }
+                    default: {
+                        evalStack.push(element);
+                    }
+                }
+            } 
+            catch(err) {
+                console.log(err);
+            }
+        });
 
+        console.log('ans : ' + Calculator.getStackTop(evalStack));
+        return Calculator.getStackTop(evalStack);
+    }
 }

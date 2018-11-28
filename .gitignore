@@ -54,3 +54,11 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
+.vscode/
+android/app/.project
+.vscode/launch.json
+.vscode/.react/debuggerWorker.js
+android/.project
+android/.settings/org.eclipse.buildship.core.prefs
+android/app/.classpath
+android/app/.settings/org.eclipse.buildship.core.prefs

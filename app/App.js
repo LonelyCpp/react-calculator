@@ -28,25 +28,34 @@ export default class App extends Component<Props> {
 
   _onPress = (char) => {
       console.log(char);
-      if(char == ''){       // Blank button press
+      // Blank button press
+      if(char == ''){       
         return;
       } 
+      // Calculate answer
       else if(char == '='){
-        Calculator.infixToPostfix(this.state.expression);
+        let postfix = Calculator.infixToPostfix(this.state.expression);
+        let ans = Calculator.evalPostfix(postfix);
+        this.setState(({expression: ans}))
       }
-      else if(char == 'C'){ // Clear screen
+      // Clear notepad
+      else if(char == 'C'){ 
         this.setState(previousState => (
           { expression: ''}
         ));
       }
-      else if(char == '<'){ // Backspace
+      // Backspace
+      else if(char == '<'){ 
         this.setState(previousState => (
           { expression: previousState.expression.slice(0, -1)}
         ));
       } 
-      else {                // operators or numbers
+      // operators or numbers
+      else {                
         let len = this.state.expression.length;
         if(this.isOperator(char)){
+          // checks if the last character was an operator
+          // avoids appending two consecutive operators 
           if(len > 0){
             let lastChar = this.state.expression[len - 1];
             if(this.isOperator(lastChar)){
@@ -71,8 +80,8 @@ export default class App extends Component<Props> {
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
           <NumberButton text='C' onPress={this._onPress}/>
+          <NumberButton text=''  onPress={this._onPress}/>
           <NumberButton text='<'  onPress={this._onPress}/>
-          <NumberButton text='%' onPress={this._onPress}/>
           <NumberButton text='/' onPress={this._onPress}/>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
