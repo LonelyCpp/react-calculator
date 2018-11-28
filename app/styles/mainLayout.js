@@ -28,7 +28,7 @@ export default StyleSheet.create({
 
     numberButton: {
         flex: 1,
-        borderBottomWidth: 2,
+        borderBottomWidth: 0.5,
         borderColor: 'grey',
         justifyContent: 'center',
         alignItems: 'center'

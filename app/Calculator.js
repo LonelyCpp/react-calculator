@@ -3,9 +3,10 @@ export default class Calculator{
     static getPriority = (char) => {
         switch(char){
             case '+':
-            case '-': return 0;
+            case '-': return 1;
             case '*':
-            case '/': return 1;
+            case '/': return 2;
+            default : return 0;
         }
     }
 
@@ -16,6 +17,7 @@ export default class Calculator{
     }
 
     static infixToPostfix = (infix) =>{
+
         infix = infix.replace(/\+/g, ' + ');
         infix = infix.replace(/\-/g, ' - ');
         infix = infix.replace(/\//g, ' / ');

@@ -12,7 +12,8 @@ export default class App extends Component<Props> {
   constructor(props){
     super(props);
     this.state = {
-      expression: ''
+      expression: '',
+      clear: false,
     }
   }
 
@@ -28,6 +29,11 @@ export default class App extends Component<Props> {
 
   _onPress = (char) => {
       console.log(char);
+      // Clears the notepad if it contains an answer
+      if(this.state.clear){
+        this.state.expression = ''
+        this.state.clear = false;
+      }
       // Blank button press
       if(char == ''){       
         return;
@@ -36,7 +42,11 @@ export default class App extends Component<Props> {
       else if(char == '='){
         let postfix = Calculator.infixToPostfix(this.state.expression);
         let ans = Calculator.evalPostfix(postfix);
+        if(isNaN(ans)){
+          ans = 'Invalid Expression'
+        }
         this.setState(({expression: ans}))
+        this.state.clear = true;
       }
       // Clear notepad
       else if(char == 'C'){ 
@@ -103,8 +113,8 @@ export default class App extends Component<Props> {
           <NumberButton text='+' onPress={this._onPress}/>
         </View>
         <View style={mainLayoutStyle.numberpadRow}>
-          <NumberButton text='0' onPress={this._onPress}/>
           <NumberButton text=''  onPress={this._onPress}/>
+          <NumberButton text='0' onPress={this._onPress}/>
           <NumberButton text='.' onPress={this._onPress}/>
           <NumberButton text='=' onPress={this._onPress}/>
         </View>
@@ -112,13 +122,3 @@ export default class App extends Component<Props> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-    flexDirection: 'column'
-  },
-});
