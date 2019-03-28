@@ -1,37 +1,38 @@
-import {StyleSheet,} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#F5FCFF',
-      flexDirection: 'column'
-    },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#020202',
+    flexDirection: 'column'
+  },
 
-    notepadRow: {
-        flex: 3, 
-        backgroundColor: '#f3a712', 
-        alignSelf: 'stretch',
-        borderBottomWidth: 3,
-        borderColor: '#000000',
-        alignItems: 'flex-end',
-        justifyContent: 'flex-end'
-    },
+  notepadRow: {
+    flex: 3,
+    backgroundColor: '#020202',
+    alignSelf: 'stretch',
+    borderBottomWidth: 2,
+    borderColor: '#ffffff',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end',
+    margin: 10
+  },
 
-    numberpadRow: {
-        flex: 1, 
-        backgroundColor: 'white', 
-        alignSelf: 'stretch',
-        flexDirection: 'row'
-    },
+  numberpadRow: {
+    flex: 1,
+    backgroundColor: 'white',
+    alignSelf: 'stretch',
+    flexDirection: 'row'
+  },
 
-    numberButton: {
-        flex: 1,
-        borderBottomWidth: 0.5,
-        borderColor: 'grey',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#29335c'
-    },
-  });
+  numberButton: {
+    flex: 1,
+    alignSelf: 'stretch',
+    borderColor: 'grey',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#020202'
+  }
+});
