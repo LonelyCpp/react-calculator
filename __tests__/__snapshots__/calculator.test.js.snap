@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#F5FCFF",
+      "backgroundColor": "#020202",
       "flex": 1,
       "flexDirection": "column",
       "justifyContent": "center",
@@ -17,18 +17,19 @@ exports[`renders correctly 1`] = `
       Object {
         "alignItems": "flex-end",
         "alignSelf": "stretch",
-        "backgroundColor": "#f3a712",
-        "borderBottomWidth": 3,
-        "borderColor": "#000000",
+        "backgroundColor": "#020202",
+        "borderBottomWidth": 2,
+        "borderColor": "#ffffff",
         "flex": 3,
         "justifyContent": "flex-end",
+        "margin": 10,
       }
     }
   >
     <Text
       style={
         Object {
-          "color": "#e8ebf7",
+          "color": "#ffffff",
           "fontSize": 50,
         }
       }
@@ -40,122 +41,150 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "flex": 1,
         "flexDirection": "row",
       }
     }
   >
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        C
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        &lt;
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        /
       </Text>
     </View>
   </View>
@@ -163,122 +192,150 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "flex": 1,
         "flexDirection": "row",
       }
     }
   >
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        7
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        8
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        9
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        *
       </Text>
     </View>
   </View>
@@ -286,122 +343,150 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "flex": 1,
         "flexDirection": "row",
       }
     }
   >
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        4
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        5
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        6
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        -
       </Text>
     </View>
   </View>
@@ -409,122 +494,150 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "flex": 1,
         "flexDirection": "row",
       }
     }
   >
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        1
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        2
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        3
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        +
       </Text>
     </View>
   </View>
@@ -532,122 +645,150 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "flex": 1,
         "flexDirection": "row",
       }
     }
   >
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        0
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        .
       </Text>
     </View>
     <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffbcbc",
-            "borderColor": "red",
-            "borderWidth": 1,
-            "height": 100,
-            "justifyContent": "center",
-            "margin": 10,
-            "width": 300,
-          },
-          undefined,
-        ]
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#020202",
+          "flex": 1,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
       }
     >
       <Text
         style={
-          Object {
-            "color": "#333333",
-            "margin": 20,
-          }
+          Array [
+            Object {
+              "fontSize": 25,
+            },
+            Object {
+              "color": "#FF7F50",
+            },
+          ]
         }
       >
-        TouchableNativeFeedback is not supported on this platform!
+        =
       </Text>
     </View>
   </View>
