@@ -23,4 +23,4 @@ or
 
 ## Screenshots
 
-![Main Screen](/screenshot/iphonex.png?raw=true "Main Screen")
+![Main Screen](./screenshots/iphonex.png?raw=true 'Main Screen')
